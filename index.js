@@ -17,6 +17,9 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
 
   player = button.textContent;
   computerTurn();
+  playerText.textContent = `Player: ${player}`;
+  computerText.textContent = `Computer: ${computer}`;
+  resultText.textContent = checkWinner();
 }));
 
 function computerTurn() {
@@ -33,5 +36,21 @@ function computerTurn() {
     case 3:
       computer = "SCISSORS";
       break;
+  }
+}
+
+function checkWinner() {
+
+  if (player == computer) {
+    return "Tie!";
+
+  } else if (computer == "ROCK") {
+    return (player == "PAPER") ? "You Win!" : "You Lose!";
+
+  } else if (computer == "PAPER") {
+    return (player == "SCISSORS") ? "You Win!" : "You Lose!";
+
+  } else if (computer == "SCISSORS") {
+    return (player == "ROCK") ? "You Win!" : "You Lose!";
   }
 }
