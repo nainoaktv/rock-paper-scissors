@@ -1,0 +1,12 @@
+/* ADD STYLING AND MAKE GAME PRETTY :) */
+#playerText {
+  color: blue;
+}
+
+#computerText {
+  color: red;
+}
+
+#resultText {
+  color: green;
+}
