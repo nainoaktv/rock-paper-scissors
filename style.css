@@ -1,4 +1,18 @@
-/* ADD STYLING AND MAKE GAME PRETTY :) */
+/* Game Div */
+
+#gameDiv {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+  border: 3px solid black;
+  border-radius: 45px;
+
+  padding: 10px;
+
+  background-color: bisque;
+}
+
+/* Text Styling */
 #playerText {
   color: blue;
 }
